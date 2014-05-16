@@ -1,3 +1,6 @@
+"""
+    you can push a rq job from a python script
+"""
 import redis
 import json
 from functools import partial
