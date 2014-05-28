@@ -1,10 +1,9 @@
 from redis import Redis
 from rq import Queue
+from worker import count_words_at_url
+import time
 
 q = Queue(connection=Redis())
-
-from worker import count_words_at_url
-
 result = q.enqueue(count_words_at_url, "http://graph.facebook.com/vireshas")
-import pdb; pdb.set_trace()
-print result.perform()
+time.sleep(2)
+print result.result
