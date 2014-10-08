@@ -13,9 +13,9 @@ dumps = partial(pickle.dumps, protocol=pickle.HIGHEST_PROTOCOL)
 client = redis.Redis()
 
 #every job has an enqueue id
-job_id = "26"
+job_id = "101"
 #this is the expected format for a func and its params
-job_tuple = "add.add", None, (1,2), {}
+job_tuple = "add.add", None, (100,2), {} # {"pubsub": "true"}
 #encode with pickle; rq expects pickled value in key "data"
 job = {
     "data" : dumps(job_tuple),
