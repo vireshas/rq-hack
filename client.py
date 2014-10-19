@@ -9,6 +9,6 @@ result = q.enqueue(api, "http://graph.facebook.com/vireshas")
 time.sleep(2)
 print result.result
 
-result = q.enqueue(add, 1, 2)
+result = q.enqueue(add, 1, 2, pubsub="true")
 time.sleep(2)
 print result.result
