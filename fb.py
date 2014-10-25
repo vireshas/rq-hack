@@ -1,5 +1,5 @@
 import requests
 
-def count_words_at_url(url):
+def api(url):
     resp = requests.get(url)
     return resp.content
