@@ -1,4 +1,4 @@
-###rq hack
+###rq(https://github.com/nvie/rq) hack
 
 Enqueuing a job from a python script.  
 
