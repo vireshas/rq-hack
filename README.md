@@ -8,7 +8,7 @@ Enqueuing a job from a python script.
         rqworker  
         python enqueue_job_to_rq.py  
 
-enqueue_job_to_rq.py: enqueues a job from python script  
+<b>enqueue_job_to_rq.py: enqueues a job from python script</b>  
 
 ######Using golang client to enqueue a job
         from the cloned directory, cd go-client  
