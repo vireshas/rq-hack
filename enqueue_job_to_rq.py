@@ -12,7 +12,7 @@ dumps = partial(pickle.dumps, protocol=pickle.HIGHEST_PROTOCOL)
 
 client = redis.Redis()
 
-#every job has a enqueue id
+#every job has an enqueue id
 job_id = "26"
 #this is the expected format for a func and its params
 job_tuple = "w.add", None, (1,2), {}
